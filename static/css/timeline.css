@@ -1,0 +1,10 @@
+#timeline{
+    background: rgba(193, 193, 193, 0.3);
+    position: absolute;
+    bottom: 0;
+    left:21.5%;
+    width: 52%;
+    height: 16%;
+    box-shadow: 0 0 10px #888888;
+    z-index: 1;
+}

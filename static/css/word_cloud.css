@@ -1,0 +1,10 @@
+#word_cloud{
+    background: rgba(193,193,193, 0.3);
+    position: absolute;
+    left: 0;
+    top: 48%;
+    width: 20%;
+    height:35%;
+    box-shadow: 0 0 10px #888888;
+    z-index: 1;
+}

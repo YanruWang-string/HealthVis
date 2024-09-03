@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BodyVis</title>
+</head>
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../static/lib/d3/d3.v3.js"></script>
+<link rel="stylesheet" href="../static/css/body_vis_base.css">
+<link rel="stylesheet" href="../static/css/body_view.css">
+<link rel="stylesheet" href="../static/css/sunburst_view.css">
+<link rel="stylesheet" href="../static/css/disease_bar_view.css">
+<link rel="stylesheet" href="../static/css/force_map_view.css">
+<link rel="stylesheet" href="../static/css/knowledge_graph.css">
+<link rel="stylesheet" href="../static/css/searchtool.css">
+<link rel="stylesheet" href="../static/css/organ_view.css">
+<link rel="stylesheet" href="../static/css/disease_info.css">
+<link rel="stylesheet" href="../static/css/recommend_list.css">
+<body>
+<div id="title">
+    <span id="system_title">城市公共健康态势监控和可视分析平台——疾病分析</span>
+    <button id="health_btn">健康态势</button>
+    <button id="weather_page">气候分析</button>
+</div>
+<div class="container" id="search_item">
+    <input type="text" placeholder="请输入病人ID或疾病名称..." class="search_input" id="search_input" value="">
+    <div class="search"></div>
+</div>
+
+<div id="body_view">
+    <div id="body_background"></div>
+    <div id="force_map_view"></div>
+    <div id="knowledge_graph"></div>
+</div>
+<div id="sunburst">
+    <div id="main">
+         <div id="chart"></div>
+         <div id="sequence"></div>
+    </div>
+</div>
+<div id="disease_info"></div>
+<div id="recommend_list"></div>
+<div id="organ_view"></div>
+<div id="disease_bar_view"></div>
+</body>
+
+<script type="text/javascript" src="../static/js/body_view.js"></script>
+<script type="text/javascript" src="../static/js/sunburst_view.js"></script>
+<script type="text/javascript" src="../static/js/disease_bar_view.js"></script>
+<script type="text/javascript" src="../static/js/force_map_view.js"></script>
+<script type="text/javascript" src="../static/js/knowledge_graph.js"></script>
+<script type="text/javascript" src="../static/js/recommend_view.js"></script>
+<script type="text/javascript" src="../static/js/disease_info.js"></script>
+<script type="text/javascript" src="../static/js/single_graph.js"></script>
+<script type="text/javascript" src="../static/js/body_vis_main.js"></script>
+</html>

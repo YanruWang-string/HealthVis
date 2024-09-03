@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthVis</title>
+</head>
+
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../static/lib/d3/d3.js"></script>
+<script type="text/javascript" src="../static/lib/d3/d3.layout.cloud.js"></script>
+<script type="text/javascript" src="../static/lib/mapbox/mapbox-gl-draw.js"></script>
+<link rel='stylesheet' href='../static/lib/mapbox/mapbox-gl-draw.css'/>
+<script type="text/javascript" src="../static/lib/mapbox/turf.min.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css'/>
+
+<link rel="stylesheet" href="../static/css/base.css">
+<link rel="stylesheet" href="../static/css/map_view.css">
+<link rel="stylesheet" href="../static/css/timeline.css">
+<link rel="stylesheet" href="../static/css/radar.css">
+<link rel="stylesheet" href="../static/css/hospital_disease_bar.css">
+<link rel="stylesheet" href="../static/css/job_pie.css">
+<link rel="stylesheet" href="../static/css/body_view.css">
+<link rel="stylesheet" href="../static/css/word_cloud.css">
+<body>
+    <div id="title">
+        <span id="system_title">城市公共健康态势监控和可视分析平台——城市健康</span>
+        <button id="second_page">疾病分析</button>
+        <button id="weather_page">气候分析</button>
+    </div>
+    <div id="select_box">
+            <form action="" class="radio_box">
+                <input type="radio" name="map_point_type" value="pollution_company" id="pollution_company_item " checked="checked"/><label for="pollution_company_item ">污染企业</label>
+                <input type="radio" name="map_point_type" value="restaurant" id="restaurant_item "/><label for="restaurant_item ">地区饮食</label>
+                <input type="radio" name="map_point_type" value="GDP" id="gdp_item"/><label for="gdp_item">经济指标</label>
+                <input type="radio" name="map_point_type" value="health_center" id="health_center_item" /><label for="health_center_item">医疗资源</label>
+            </form>
+    </div>
+    <div id="map_view"></div>
+    <div id="radar"></div>
+    <div id="hospital_disease_bar"></div>
+    <div id="job_pie"></div>
+    <div id="timeline"></div>
+    <div id="word_cloud"></div>
+</body>
+
+
+<script type="text/javascript" src="../static/js/map_view.js"></script>
+<script type="text/javascript" src="../static/js/radar.js"></script>
+<script type="text/javascript" src="../static/js/timeline.js"></script>
+<script type="text/javascript" src="../static/js/job_pie.js"></script>
+<script type="text/javascript" src="../static/js/word_cloud.js"></script>
+<script type="text/javascript" src="../static/js/rainfall_view.js"></script>
+<script type="text/javascript" src="../static/js/hospital_disease_bar.js"></script>
+<script type="text/javascript" src="../static/js/health_vis_main.js"></script>
+
+</html>
